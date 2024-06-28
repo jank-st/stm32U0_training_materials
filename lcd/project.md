@@ -6,6 +6,7 @@ Presentation
 <ainfo> 
 To avoid any IO LCD assignment configuration issue. Let open project related to **STM320U83C-DK** board where LCD pins are already assigned.
 </ainfo>
+
 <p> </p>
 
 Press **Access to BOARD selector**
