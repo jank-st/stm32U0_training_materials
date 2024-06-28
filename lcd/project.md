@@ -9,7 +9,7 @@ To avoid any IO LCD assignment configuration issue. Let open project related to 
 
 <p> </p>
 
-Press **Access to BOARD selector**
+Press **Access to BOARD SELECTOR**
 <p> </p>
 ![gif](./img/board_select.png)
 
