@@ -24,22 +24,12 @@
       {
         "name": "project",
         "path": "/lcd",
-        "file": "RunSleepStop_handsOn.md"
+        "file": "project.md"
       },
       {
         "name": "intro",
         "path": "/lcd",
         "file": "intro.md"
-      },
-      {
-        "name": "Bootloader_UserApp",
-        "path": "/folder1",
-        "file": "Bootloader_UserApp.md"
-      },
-      {
-        "name": "Bootloader_code",
-        "path": "/folder1",
-        "file": "Bootloader_code.md"
       }
     ],
     "menuStructure": [

@@ -1,8 +1,10 @@
 ----!
 Presentation
 ----!
-
 # Open CubeMx or CubeMX plugin in CubeIDE
+
+> :bulb: **Tip:** To avoid any IO LCD assignment configuration issue. Let open project related to **STM320U83C-DK** board where LCD pins are already assigned.
+
 Press **Access to BOARD selector**
 <p> </p>
 ![gif](./img/board_select.png)
