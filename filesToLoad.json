@@ -1,35 +1,35 @@
 {
-    "title": "U5 dedicated training 2024",
-    "githubLoc": "https://raw.githubusercontent.com/jank-st/test_materil_2022/master",
+    "title": "U0 dedicated training 2024",
+    "githubLoc": "https://raw.githubusercontent.com/stm32U0_training_materials/master",
     "options": {
       "allowMenu": true,
       "allowTagSelect": false
     },
     "filesToLoadArr": [
       {
-        "name": "LPTIM_handson_1",
-        "path": "/folder1",
-        "file": "LPTIM_handson_1.md"
+        "name": "cubeide",
+        "path": "/lcd",
+        "file": "cubeide.md"
       },
       {
-        "name": "LPTIM_handson_2",
-        "path": "/folder1",
-        "file": "LPTIM_handson_2.md"
+        "name": "cubemx",
+        "path": "/lcd",
+        "file": "cubemx.md"
       },
       {
-        "name": "LPTIM_handson_3",
-        "path": "/folder1",
-        "file": "LPTIM_handson_3.md"
+        "name": "wiring",
+        "path": "/lcd",
+        "file": "wiring.md"
       },
       {
-        "name": "RunSleepStop_handsOn",
-        "path": "/folder1",
+        "name": "project",
+        "path": "/lcd",
         "file": "RunSleepStop_handsOn.md"
       },
       {
-        "name": "Standby_handsOn",
-        "path": "/folder1",
-        "file": "Standby_handsOn.md"
+        "name": "intro",
+        "path": "/lcd",
+        "file": "intro.md"
       },
       {
         "name": "Bootloader_UserApp",
@@ -45,18 +45,38 @@
     "menuStructure": [
 {
       "type": "Folder",
-      "name": "STANDBY HANDS-ON",
+      "name": "LCD HANDS-ON",
       "children": [
         {
           "type": "File",
-          "name": "Standby_HandsOn",
-          "file": "Standby_handsOn.md"
+          "name": "1. Introduction",
+          "file": "intro.md"
+        },
+        {
+          "type": "File",
+          "name": "2. Create Project",
+          "file": "project.md"
+        },
+        {
+          "type": "File",
+          "name": "3. CubeMX",
+          "file": "cubemx.md"
+        },
+        {
+          "type": "File",
+          "name": "4. LCD Mapping",
+          "file": "wiring.md"
+        },
+        {
+          "type": "File",
+          "name": "5. CubeIDE",
+          "file": "cubeide.md"
         }
       ]
     },
     {
       "type": "Folder",
-      "name": "RUN/SLEEP/STOP HANDS-ON",
+      "name": "ADC HANDS-ON",
       "children": [
         {
           "type": "File",
@@ -67,7 +87,7 @@
     },
     {
       "type": "Folder",
-      "name": "LPTIM HANDS-ON",
+      "name": "STANDBY HANDS-ON",
       "children": [
         {
           "type": "File",
@@ -88,7 +108,7 @@
     },
     {
       "type": "Folder",
-      "name": "BOOTLOADER HANDS-ON",
+      "name": "SHUTDOWN HANDS-ON",
       "children": [
         {
           "type": "File",

@@ -1,5 +1,10 @@
-# STM32U5 dedicated training repository
+# STM32U0 dedicated training repository
 
-This is repository with STM32U5 training cheat sheets and other materials
+This is repository with STM32U0 hands on cheat sheets and other materials focusing on:
 
-[Click to go to page](https://rristm.github.io/tomas_materials_v2/jank-st/test_materil_2022/master)
+- Liquid Crystal Display Controller
+- ADC acquisition with DMA data management
+- Low power Standby example and PU/PD retention
+- Simply Shut down example
+
+[Click to go to page](https://rristm.github.io/tomas_materials_v2/jank-st/stm32U0_training_materials/master)
