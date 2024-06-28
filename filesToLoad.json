@@ -7,27 +7,27 @@
     },
     "filesToLoadArr": [
       {
-        "name": "cubeide",
+        "name": "CubeIDE",
         "path": "/lcd",
         "file": "cubeide.md"
       },
       {
-        "name": "cubemx",
+        "name": "CubeMX",
         "path": "/lcd",
         "file": "cubemx.md"
       },
       {
-        "name": "wiring",
+        "name": "LCD Mapping",
         "path": "/lcd",
         "file": "wiring.md"
       },
       {
-        "name": "project",
+        "name": "Create Project",
         "path": "/lcd",
         "file": "project.md"
       },
       {
-        "name": "intro",
+        "name": "Introduction",
         "path": "/lcd",
         "file": "intro.md"
       }
