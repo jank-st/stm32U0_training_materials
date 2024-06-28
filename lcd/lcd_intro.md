@@ -12,7 +12,7 @@
   - **[STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)** from version 1.0.0
   
 - Hardware:
-  - **USB-C** cables 
+  - **USB-C** cable 
   - **[STM32U083C-DK](https://www.st.com/en/evaluation-tools/stm32u083c-dk.html)** board 
 
 - Documentation:

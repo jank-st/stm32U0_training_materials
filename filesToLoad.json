@@ -1,5 +1,5 @@
 {
-    "title": "U0 dedicated training 2024",
+    "title": "STM32U0 dedicated training 2024",
     "githubLoc": "https://raw.githubusercontent.com/stm32U0_training_materials/master",
     "options": {
       "allowMenu": true,
@@ -9,33 +9,64 @@
       {
         "name": "CubeIDE",
         "path": "/lcd",
-        "file": "cubeide.md"
+        "file": "lcd_cubeide.md"
       },
       {
         "name": "CubeMX",
         "path": "/lcd",
-        "file": "cubemx.md"
+        "file": "lcd_cubemx.md"
       },
       {
         "name": "LCD Mapping",
         "path": "/lcd",
-        "file": "wiring.md"
+        "file": "lcd_wiring.md"
       },
       {
         "name": "Create Project",
         "path": "/lcd",
-        "file": "project.md"
+        "file": "lcd_project.md"
       },
       {
         "name": "Introduction",
         "path": "/lcd",
-        "file": "intro.md"
+        "file": "lcd_intro.md"
       }
     ],
     "menuStructure": [
 {
       "type": "Folder",
       "name": "LCD HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "1. Introduction",
+          "file": "lcd_intro.md"
+        },
+        {
+          "type": "File",
+          "name": "2. Create Project",
+          "file": "lcd_project.md"
+        },
+        {
+          "type": "File",
+          "name": "3. CubeMX",
+          "file": "lcd_cubemx.md"
+        },
+        {
+          "type": "File",
+          "name": "4. LCD Mapping",
+          "file": "lcd_wiring.md"
+        },
+        {
+          "type": "File",
+          "name": "5. CubeIDE",
+          "file": "lcd_cubeide.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "ADC HANDS-ON",
       "children": [
         {
           "type": "File",
@@ -54,8 +85,29 @@
         },
         {
           "type": "File",
-          "name": "4. LCD Mapping",
-          "file": "wiring.md"
+          "name": "5. CubeIDE",
+          "file": "cubeide.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "STANDBY HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "1. Introduction",
+          "file": "intro.md"
+        },
+        {
+          "type": "File",
+          "name": "2. Create Project",
+          "file": "project.md"
+        },
+        {
+          "type": "File",
+          "name": "3. CubeMX",
+          "file": "cubemx.md"
         },
         {
           "type": "File",
@@ -66,49 +118,27 @@
     },
     {
       "type": "Folder",
-      "name": "ADC HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "RunSleepStop_HandsOn",
-          "file": "RunSleepStop_handsOn.md"
-        }
-      ]
-    },
-    {
-      "type": "Folder",
-      "name": "STANDBY HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "LPTIM handson Part1",
-          "file": "LPTIM_handson_1.md"
-        },
-        {
-          "type": "File",
-          "name": "LPTIM handson Part2",
-          "file": "LPTIM_handson_2.md"
-        },
-        {
-          "type": "File",
-          "name": "LPTIM handson Part3",
-          "file": "LPTIM_handson_3.md"
-        }
-      ]
-    },
-    {
-      "type": "Folder",
       "name": "SHUTDOWN HANDS-ON",
       "children": [
         {
           "type": "File",
-          "name": "BOOTLOADER - User application",
-          "file": "Bootloader_UserApp.md"
+          "name": "1. Introduction",
+          "file": "intro.md"
         },
         {
           "type": "File",
-          "name": "BOOTLOADER - Code",
-          "file": "Bootloader_code.md"
+          "name": "2. Create Project",
+          "file": "project.md"
+        },
+        {
+          "type": "File",
+          "name": "3. CubeMX",
+          "file": "cubemx.md"
+        },
+        {
+          "type": "File",
+          "name": "5. CubeIDE",
+          "file": "cubeide.md"
         }
       ]
     }
