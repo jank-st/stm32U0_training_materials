@@ -30,6 +30,11 @@
         "name": "Introduction",
         "path": "/lcd",
         "file": "lcd_intro.md"
+      },
+      {
+        "name": "CubeMX",
+        "path": "/standby",
+        "file": "cubemx.md"
       }
     ],
     "menuStructure": [
