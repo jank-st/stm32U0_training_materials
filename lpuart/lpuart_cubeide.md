@@ -1,4 +1,4 @@
-//----!
+----!
 Presentation
 ----!
 
@@ -7,14 +7,25 @@ Presentation
 
 ![image](./img/open_project.png)
 
+# Correct minor bugs in Generated Project
+## LSE configuration
+LSE state is wrongly configured, must be **RCC_LSE_ON** otherwise no kernel clock is provided to LPUART1.
+
+Change LSEState in `SystemClock_Config()` function in **main.c** file:
+
+```c
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON; //bug = RCC_LSE_ON_RTC_ONLY
+```
+<br />
 
 # Initialization
+
 ## Variables
 
 Copy paste following snippet in `USER CODE BEGIN PV` section in **main.c** file:
 
 ```c
-uint8_t bufferTX[8] = "\n\r Hello";
+uint8_t bufferTX[] = "\n\r Hello";
 uint8_t bufferRX[8] = "";
 ```
 
@@ -33,14 +44,6 @@ HAL_RTCEx_SetLowPowerCalib(&hrtc, RTC_LPCAL_SET);
 
 /*Keep LPUART clocked in Stop mode*/
 HAL_UARTEx_EnableStopMode(&hlpuart1);
-```
-
-## Debug in STOPx mode
-
-Copy paste following snippet in `USER CODE BEGIN 2` section in **main.c** file:
-
-```c
-HAL_DBGMCU_EnableDBGStopMode();
 ```
 
 # STOPx mode
@@ -67,7 +70,7 @@ HAL_ResumeTick();
 # LPUART acitivity in HAL library
 
 ## TX in polling mode
-Copy paste following snippet in `while(1) loop` section in **main.c** file:
+Copy paste following snippet in `while(1) loop` before `EnterSTOP2Mode` section in **main.c** file:
 
 ```c
 /*TX data w/o FIFO
@@ -75,8 +78,9 @@ Copy paste following snippet in `while(1) loop` section in **main.c** file:
 * */
 HAL_UART_Transmit(&hlpuart1, (uint8_t*)bufferTX, 8, 1000);
 ```
+<p> </p>
 
-Now open COMport Terminal connect to STLink Virtual Comport *(9600 baudrate, 8 bits, no Parity, 1 Stop bit)*
+Now open ComPort Terminal connect to STLink Virtual Comport *(9600 baudrate, 8 bits, no Parity, 1 Stop bit)*
 
 <p> </p>
 

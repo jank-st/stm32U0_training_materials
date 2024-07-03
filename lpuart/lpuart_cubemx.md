@@ -23,14 +23,14 @@ Note that **LSESYSEN bit in BDCR** must be enabled as well (missing in RM descri
   
 - Set `Wake Up clock to 1Hz` base
   
--  Keep `counter to 1`. Periodic wake up event occurs every 2 seconds
+- Set `counter to 1`. Periodic wake up event occurs every 2 seconds
 
 - Enable `RTC and TAMP interrupts` under NVIC tab
 
 ![image](./img/RTC.png)
 
 # Low Power UART
-- LPUART1 is connecetd to STlink via PA2/3 pins and work as Virtual Comport
+- LPUART1 is connecetd to STlink via PA2/3 pins and acts as Virtual Comport
 
 - Select **LPUART1** instance
   
