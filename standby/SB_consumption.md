@@ -17,7 +17,6 @@ Now, we need to connect the **STLINK-V3PWR** as explain just below:
 
 # STLINK-V3PWR controlled by STM32CubeMonPWR
 To control the **STLINK-V3PWR**, we will use **STM32CubeMonPWR**.
-\
 When it is open, select the STLINK-v3PWR COM Port avec click on `TAKE CONTROL`.
 
 ![gif](./img/cubemonpwr1.gif)
@@ -39,7 +38,6 @@ When the configuration is done, we can power the full application by clicking on
 
 # Measure Consumption
 To measure the real time consumption of the application, we need to click on `START ACQUISITION`.
-\
 After stopping the acquisition, we can select a more precise window and display the average consumption using the `Show Report` button:
 
 ![gif](./img/cubemonpwr3.gif)

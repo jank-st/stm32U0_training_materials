@@ -76,10 +76,8 @@ HAL_PWR_EnterSTANDBYMode();
 
 # Run the application
 Now it is time to build and run the application on the NUCLEO-U083RC.
-\
-\
+
 Build the project by clicking on the *hammer* icon : ![gif](./img/hammer.png)
-\
 Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![gif](./img/play.png)
 
 ![gif](./img/cubeide1.gif)
