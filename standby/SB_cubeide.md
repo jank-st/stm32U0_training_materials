@@ -1,7 +1,7 @@
 ----!
 Presentation
 ----!
-# Application code
+# Application code - main.c
 ## #define Led Retention
 Add the following code in the `Private define` section:
 
@@ -17,7 +17,7 @@ Add the following code in the `Private define` section:
 Here are the different steps of the application:
 
 - Check if the system was in Standby and then Clear the Standby flag
-- Check if the system was resumed with Wakeup pin 2 and then clear it. In this case, the LED4 will blink
+- Check if the system was resumed with Wakeup pin 2 and then clear its flag. In this case, the LED4 will blink
 - if *LEDRETAINED* is defined, configure the pullup retention
 - Enable ultra low power mode
 - Enable WakeUp Pin PWR_WAKEUP_PIN2 connected to PC.13
@@ -75,8 +75,11 @@ HAL_PWR_EnterSTANDBYMode();
 ```
 
 # Run the application
-Now it is time to build and run the application on the NUCLEO-U083RC.\
-Build the project by clicking on the *hammer* icon : ![gif](./img/hammer.png)\
+Now it is time to build and run the application on the NUCLEO-U083RC.
+\
+\
+Build the project by clicking on the *hammer* icon : ![gif](./img/hammer.png)
+\
 Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![gif](./img/play.png)
 
 ![gif](./img/cubeide1.gif)

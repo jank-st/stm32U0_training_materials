@@ -20,7 +20,7 @@ For this hands on, we will see how to set up pullup/pulldown retention in Standb
 
 - Hardware:
   - **USB-C** cable
-  - **[STM32U083C-DK](https://www.st.com/en/evaluation-tools/stm32u083c-dk.html)** board
+  - **[NUCLEO-U083RC](https://www.st.com/en/evaluation-tools/nucleo-u083rc.html)** board
   - **[STLINK-V3PWR](https://www.st.com/en/development-tools/stlink-v3pwr.html#documentation)**
 
 - Documentation:
