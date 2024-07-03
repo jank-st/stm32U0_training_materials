@@ -6,13 +6,13 @@ Presentation
 Add the following code in the `Private define` section:\
 \
 /* Private define ------------------------------------------------------------*/\
-/* USER CODE BEGIN PD */
+/* USER CODE BEGIN PD */\
+\
+/* USER CODE END PD */
 
 ```c
 #define LEDRETAINED
 ```
-
-/* USER CODE END PD */
 
 ## User Code
 Here are the different steps of the application:
@@ -25,7 +25,10 @@ Here are the different steps of the application:
 
 Add the following code in the `USER CODE 2` section:\
 \
-/* USER CODE BEGIN 2 */
+/* USER CODE BEGIN 2 */\
+\
+/* USER CODE END 2 */
+
 
 ```c
 /* Check and Clear the Standby flag */
@@ -71,11 +74,9 @@ HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN2_LOW);
 HAL_PWR_EnterSTANDBYMode();
 ```
 
-/* USER CODE END 2 */
-
 # Run the application
 Now it is time to build and run the application on the NUCLEO-U083RC.\
-Build the project by clicking on the *hammer* icon : ![image](./Gifs/Hammer.png)\
-Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![image](./Gifs/Play.png)
+Build the project by clicking on the *hammer* icon : ![image](standby/Gifs/Hammer.PNG)\
+Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![image](standby/Gifs/Play.PNG)
 
-![image](./Gifs/CubeIDE1.gif)
+![image](standby/Gifs/CubeIDE1.gif)
