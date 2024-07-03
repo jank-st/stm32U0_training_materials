@@ -5,12 +5,14 @@ Presentation
 ## #define Led Retention
 Add the following code in the `Private define` section:\
 \
-[/* Private define ------------------------------------------------------------*/](#code)\
-[/* USER CODE BEGIN PD */](#code)
+/* Private define ------------------------------------------------------------*/\
+/* USER CODE BEGIN PD */
+
 ```c
 #define LEDRETAINED
 ```
-[/* USER CODE END PD */](#code)
+
+/* USER CODE END PD */
 
 ## User Code
 Here are the different steps of the application:
@@ -23,7 +25,8 @@ Here are the different steps of the application:
 
 Add the following code in the `USER CODE 2` section:\
 \
-[/* USER CODE BEGIN 2 */](#code)
+/* USER CODE BEGIN 2 */
+
 ```c
 /* Check and Clear the Standby flag */
 if(__HAL_PWR_GET_FLAG(PWR_FLAG_SB) != RESET)
@@ -67,11 +70,12 @@ HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN2_LOW);
 /* Enter the system to STANDBY mode */
 HAL_PWR_EnterSTANDBYMode();
 ```
-[/* USER CODE END 2 */](#code)
+
+/* USER CODE END 2 */
 
 # Run the application
 Now it is time to build and run the application on the NUCLEO-U083RC.\
-Build the project by clicking on the *hammer* icon : ![Image6](./Gifs/Hammer.png)\
-Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![Image6](./Gifs/Play.png)
+Build the project by clicking on the *hammer* icon : ![image](./Gifs/Hammer.png)\
+Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![image](./Gifs/Play.png)
 
-![Image8](./Gifs/CubeIDE1.gif)
+![image](./Gifs/CubeIDE1.gif)
