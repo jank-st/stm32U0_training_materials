@@ -6,7 +6,8 @@ Presentation
 Add the following code in the `Private define` section:
 
 
->/* Private define ------------------------------------------------------------*/\
+>/* Private define ------------------------------------------------------------*/
+\
 >/* USER CODE BEGIN PD */
 >
 >/* USER CODE END PD */
