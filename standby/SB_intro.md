@@ -7,11 +7,6 @@ For this hands on, we will see how to set up pullup/pulldown retention in Standb
 - Keep PU/PD retention during Standby mode​
 - Play with CubeMonitorPWR
 
-- Create simple example from scratch
-- After hands on you be able to activate any segment on LCD
-- Coding based on HAL library
-- No BSP library usage
-- STM32U083C-DK board
 ## Prerequisites
 - Software:
   - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** from version 6.12.0
