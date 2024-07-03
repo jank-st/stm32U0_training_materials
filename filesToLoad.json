@@ -50,6 +50,11 @@
         "name": "Create Project",
         "path": "/standby",
         "file": "SB_project.md"
+      },
+      {
+        "name": "Measure Consumption",
+        "path": "/standby",
+        "file": "SB_consumption.md"
       }
     ],
     "menuStructure": [
@@ -131,8 +136,13 @@
         },
         {
           "type": "File",
-          "name": "5. CubeIDE",
+          "name": "4. CubeIDE",
           "file": "SB_cubeide.md"
+        },
+        {
+          "type": "File",
+          "name": "5. Measure Consumption",
+          "file": "SB_consumption.md"
         }
       ]
     },
