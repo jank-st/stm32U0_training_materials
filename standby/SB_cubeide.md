@@ -5,10 +5,11 @@ Presentation
 ## #define Led Retention
 Add the following code in the `Private define` section:
 
->/* Private define ------------------------------------------------------------*/
+>```c
+/* Private define ------------------------------------------------------------*/
 >/* USER CODE BEGIN PD */
 >
->/* USER CODE END PD */
+>/* USER CODE END PD */```
 
 ```c
 #define LEDRETAINED
