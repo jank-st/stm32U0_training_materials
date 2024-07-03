@@ -3,12 +3,12 @@ Presentation
 ----!
 # Application code
 ## #define Led Retention
-Add the following code in the `Private define` section:\
-\
-/* Private define ------------------------------------------------------------*/\
-/* USER CODE BEGIN PD */\
-\
-/* USER CODE END PD */
+Add the following code in the `Private define` section:
+
+>/* Private define ------------------------------------------------------------*/
+>/* USER CODE BEGIN PD */
+>
+>/* USER CODE END PD */
 
 ```c
 #define LEDRETAINED
@@ -16,6 +16,7 @@ Add the following code in the `Private define` section:\
 
 ## User Code
 Here are the different steps of the application:
+
 - Check if the system was in Standby and then Clear the Standby flag
 - Check if the system was resumed with Wakeup pin 2 and then clear it. In this case, the LED4 will blink
 - if *LEDRETAINED* is defined, configure the pullup retention
@@ -23,11 +24,11 @@ Here are the different steps of the application:
 - Enable WakeUp Pin PWR_WAKEUP_PIN2 connected to PC.13
 - Enter in Standby mode
 
-Add the following code in the `USER CODE 2` section:\
-\
-/* USER CODE BEGIN 2 */\
-\
-/* USER CODE END 2 */
+Add the following code in the `USER CODE 2` section:
+
+>/* USER CODE BEGIN 2 */
+>
+>/* USER CODE END 2 */
 
 
 ```c
@@ -76,7 +77,7 @@ HAL_PWR_EnterSTANDBYMode();
 
 # Run the application
 Now it is time to build and run the application on the NUCLEO-U083RC.\
-Build the project by clicking on the *hammer* icon : ![image](standby/Gifs/Hammer.PNG)\
-Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![image](standby/Gifs/Play.PNG)
+Build the project by clicking on the *hammer* icon : ![gif](./img/hammer.png)\
+Then, Run the application on the NUCLEO-U083RC by clicking on the *play* icon : ![gif](./img/play.png)
 
-![image](standby/Gifs/CubeIDE1.gif)
+![gif](./img/cubeide1.gif)
