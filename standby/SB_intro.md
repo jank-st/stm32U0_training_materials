@@ -1,6 +1,6 @@
 # Standby Pullup Retention
 For this hands on, we will see how to set up pullup/pulldown retention in Standby mode. For this exercise, we will use the NUCLEO-U083RC. Here are the steps we are going to do in this hands on:
-
+\
 - Enter in Standby​
 - How to handle exit from Standby
 - Monitor activity on LED​
