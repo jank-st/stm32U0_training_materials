@@ -32,6 +32,26 @@
         "file": "lcd_intro.md"
       },
       {
+        "name": "CubeIDE",
+        "path": "/lpuart",
+        "file": "lpuart_cubeide.md"
+      },
+      {
+        "name": "CubeMX",
+        "path": "/lpuart",
+        "file": "lpuart_cubemx.md"
+      },
+      {
+        "name": "Create Project",
+        "path": "/lpuart",
+        "file": "lpuart_project.md"
+      },
+      {
+        "name": "Introduction",
+        "path": "/lpuart",
+        "file": "lpuart_intro.md"
+      },
+      {
         "name": "Introduction",
         "path": "/standby",
         "file": "SB_intro.md"
@@ -112,6 +132,32 @@
           "type": "File",
           "name": "5. CubeIDE",
           "file": "cubeide.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "LPUART + STOP2 HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "1. Introduction",
+          "file": "lpuart_intro.md"
+        },
+        {
+          "type": "File",
+          "name": "2. Create Project",
+          "file": "lpuart_project.md"
+        },
+        {
+          "type": "File",
+          "name": "3. CubeMX",
+          "file": "lpuart_cubemx.md"
+        },
+        {
+          "type": "File",
+          "name": "4. CubeIDE",
+          "file": "lpuart_cubeide.md"
         }
       ]
     },
