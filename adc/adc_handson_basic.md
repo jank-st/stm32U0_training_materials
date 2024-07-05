@@ -11,9 +11,7 @@ In Configuration
 
 4. Generate code
 
-
 # CubeIDE Application Code
-
 
 ## Measure ADC value
 
