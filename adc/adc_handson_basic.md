@@ -7,7 +7,7 @@ In Configuration
 
 3. Set `Sampling Time Common 1` to **160.5 cycles**
 
-![alt text](./img/adc_cubemx1.png)
+![alt text](./img/cubemx1.png)
 
 4. Generate code
 
