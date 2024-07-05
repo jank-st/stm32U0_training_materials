@@ -75,6 +75,11 @@
         "name": "Measure Consumption",
         "path": "/standby",
         "file": "SB_consumption.md"
+      },
+      {
+        "name": "ADC Theory",
+        "path": "/adc",
+        "file": "adc_theory.md"
       }
     ],
     "menuStructure": [
@@ -116,7 +121,7 @@
         {
           "type": "File",
           "name": "1. Introduction",
-          "file": "intro.md"
+          "file": "adc_theory.md"
         },
         {
           "type": "File",
