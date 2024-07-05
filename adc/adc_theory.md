@@ -54,23 +54,23 @@ The ADC can be set to different resolution.
 Resolution up to 12bit.
 It is possible to perform faster conversion by reducing the ADC resolution.
 
-| Resolution | Conversion periods (ADC Clock cycles) |
-|------------|--------------------|
-| 12 bit     | 12.5 ADC CLK       |
-| 10 bit     | 10.5 ADC CLK       |
-| 8 bit      | 18.5 ADC CLK       |
-| 6 bit      | 6.5 ADC CLK        |
+|   Resolution   | Conversion periods (ADC Clock cycles) |
+|----------------|--------------------|
+|   12 bit       | 12.5 ADC CLK       |
+|   10 bit       | 10.5 ADC CLK       |
+|   8 bit        | 18.5 ADC CLK       |
+|   6 bit        | 6.5 ADC CLK        |
 
 
 # ADC (regular) conversion modes
 
-In this part we will focus on two options:
+In this part we will focus on two options: 
 - CONT mode (continuous)
 - DISCEN mode (discontinuous)
 
 ## Single conversion
 
-Setup:
+Setup: 
 - CONT = 0
 - DISC = 0
 
@@ -80,8 +80,7 @@ Only one conversion is performed then ADC is stopped.
 
 ## Single continuous conversion
 
-Setup:
-
+Setup: 
 - CONT = 1
 - DISC = 0
 
@@ -92,8 +91,7 @@ the same channel is continuously samples, ADC newer stops.
 
 ## Discontinuous Conversion Mode
 
-Setup:
-
+Setup: 
 - CONT = 0
 - DISC = 1
 
