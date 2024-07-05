@@ -6,15 +6,15 @@ Presentation
 
 Features of STM32U0 ADC
 
-* Programmable resolution up to 12bit
-* Max sampling speed 2.5Msps
-* HW offset calibration
-* Oversampling
-* Data register 16bit
-* DMA support
-* Analog watchdogs
-* 16 External channels
-* Temperature sensor & Voltage reference calibration values
+- Programmable resolution up to 12bit
+- Max sampling speed 2.5Msps
+- HW offset calibration
+- Oversampling
+- Data register 16bit
+- DMA support
+- Analog watchdogs
+- 16 External channels
+- Temperature sensor & Voltage reference calibration values
 
 
 # ADC inputs
@@ -65,14 +65,14 @@ It is possible to perform faster conversion by reducing the ADC resolution.
 # ADC (regular) conversion modes
 
 In this part we will focus on two options:
-* CONT mode (continuous)
-* DISCEN mode (discontinuous)
+- CONT mode (continuous)
+- DISCEN mode (discontinuous)
 
 ## Single conversion
 
 Setup:
-* CONT = 0
-* DISC = 0
+- CONT = 0
+- DISC = 0
 
 Only one conversion is performed then ADC is stopped.
 
@@ -81,8 +81,8 @@ Only one conversion is performed then ADC is stopped.
 ## Single continuous conversion
 
 Setup:
-* CONT = 1
-* DISC = 0
+- CONT = 1
+- DISC = 0
 
 the same channel is continuously samples, ADC newer stops.
 
@@ -92,8 +92,8 @@ the same channel is continuously samples, ADC newer stops.
 ## Discontinuous Conversion Mode
 
 Setup:
-* CONT = 0
-* DISC = 1
+- CONT = 0
+- DISC = 1
 
 A mode when scan stop after set number of conversion in sequence and wait for new start/trigger.
 
@@ -109,8 +109,8 @@ This can easily happen in scan mode without DMA.
 
 The for this we can set two behaviors.
 
-* Overrun data preserved
-* Overrun data overwritten
+- Overrun data preserved
+- Overrun data overwritten
 
 ## Overrun data preserved
 
@@ -134,12 +134,12 @@ New data are preserved.
 This option will set how the ADC results will be handled.
 there are four options:
 
-* Regular Conversion data stored in DR register only
-* DMA one shot mode
-* DMA circular mode
+- Regular Conversion data stored in DR register only
+- DMA one shot mode
+- DMA circular mode
 
 
-## Regular  Conversion data stored in DR register only
+## Regular Conversion data stored in DR register only
 
 The data from ADC conversion store in ADC DR.
 
