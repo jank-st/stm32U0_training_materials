@@ -110,8 +110,9 @@ A mode when scan stop after set number of conversion in sequence and wait for ne
 
 The oversampling unit performs data preprocessing to offload the CPU. It can handle multiple conversions and average them into a single data with increased data width, up to 16-bit.
 
-The oversample will collect from 2x to 256x samples and add them together. Then a right shift is managed. This can increase a resolution of ADC.
-But it will increase a time needed for one final sample.
+The oversample will collect from 2x to 256x samples and add them together. Then a right shift is managed.
+
+This can increase a resolution of ADC but it will increase the time needed for one final sample.
 
 ![oversampling](./img/oversampling.svg)
 
