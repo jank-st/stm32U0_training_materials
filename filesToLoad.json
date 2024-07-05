@@ -85,6 +85,11 @@
         "name": "ADC Basic Example",
         "path": "/adc",
         "file": "adc_handson_basic.md"
+      },
+      {
+        "name": "ADC with DMA Example",
+        "path": "/adc",
+        "file": "adc_handson_dma_circular.md"
       }
     ],
     "menuStructure": [
@@ -135,13 +140,8 @@
         },
         {
           "type": "File",
-          "name": "3. CubeMX",
-          "file": "cubemx.md"
-        },
-        {
-          "type": "File",
-          "name": "5. CubeIDE",
-          "file": "cubeide.md"
+          "name": "2. ADC with DMA Example",
+          "file": "adc_handson_dma_circular.md"
         }
       ]
     },
