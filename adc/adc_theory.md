@@ -31,23 +31,23 @@ Adc will convert voltage where the low level is Vref-.
 
 ## Channel types
 
-### External inputs
+### **External inputs**
 
 This inputs are directly connect to GPIO pins of the STM32U0.
-The pin mode must be set to `Analog`
+The pin mode must be set to `Analog`.
 
 ![external input](./img/externa_input.svg)
 
-### Internal inputs
+### **Internal inputs**
 
 The ADC input is connected to internal peripheries of STM32U0.
-Typically some internal referential voltages can be read or temperature sensor
+Typically some internal referential voltages can be read or temperature sensor.
 
 ![internal input](./img/internal_input.svg)
 
 # ADC resolution
 
-The ADC can be set to different resolution
+The ADC can be set to different resolution.
 
 ## ADC1
 
@@ -68,7 +68,7 @@ In this part we will focus on two options:
 * CONT mode (continuous)
 * DISCEN mode (discontinuous)
 
-# Single conversion
+## Single conversion
 
 Setup:
 * CONT = 0
@@ -78,7 +78,7 @@ Only one conversion is performed then ADC is stopped.
 
 ![single conversion](./img/single_conversion.svg)
 
-# Single continuous conversion
+## Single continuous conversion
 
 Setup:
 * CONT = 1
@@ -89,7 +89,7 @@ the same channel is continuously samples, ADC newer stops.
 
 ![continuous conversion](./img/continuous_conversion.svg)
 
-# Discontinuous Conversion Mode
+## Discontinuous Conversion Mode
 
 Setup:
 * CONT = 0
@@ -102,13 +102,12 @@ A mode when scan stop after set number of conversion in sequence and wait for ne
 
 # ADC overrun
 
-On the ADC may occur an overrun condition. It mean that the converted data was not
-read in time by the CPU or the DMA, before the data from a new conversion is available.
-\
+On the ADC may occur an overrun condition. It mean that the converted data was not read in time by the CPU or the DMA, before the data from a new conversion is available.
+
 That ADC converted new value but the previous was not read.
 This can easily happen in scan mode without DMA.
 
-The for this we can set two behaviors
+The for this we can set two behaviors.
 
 * Overrun data preserved
 * Overrun data overwritten
@@ -116,14 +115,16 @@ The for this we can set two behaviors
 ## Overrun data preserved
 
 The old data are kept in ADC registers.
-The new data are lost
+
+The new data are lost.
 
 ![discontinuous preserve](./img/ovverrun_preserve.svg)
 
 ## Overrun data overwritten
 
-The old data are lost
-New data are preserved
+The old data are lost.
+
+New data are preserved.
 
 ![discontinuous overwrite](./img/overrun_overwrite.svg)
 
@@ -140,7 +141,7 @@ there are four options:
 
 ## Regular  Conversion data stored in DR register only
 
-The data from ADC conversion store in ADC DR
+The data from ADC conversion store in ADC DR.
 
 ## DMA one shot mode
 
