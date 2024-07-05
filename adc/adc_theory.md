@@ -73,8 +73,8 @@ In this part, we will focus on two options:
 
 Setup:
 
-- CONT = 0
-- DISCEN = 0
+  - CONT = 0
+  - DISCEN = 0
 
 Only one conversion is performed then ADC is stopped.
 
@@ -84,8 +84,8 @@ Only one conversion is performed then ADC is stopped.
 
 Setup:
 
-- CONT = 1
-- DISCEN = 0
+  - CONT = 1
+  - DISCEN = 0
 
 The same channel is continuously samples, ADC newer stops.
 
@@ -96,8 +96,8 @@ The same channel is continuously samples, ADC newer stops.
 
 Setup:
 
-- CONT = 0
-- DISCEN = 1
+  - CONT = 0
+  - DISCEN = 1
 
 A mode when scan stop after set number of conversion in sequence and wait for new start/trigger.
 
