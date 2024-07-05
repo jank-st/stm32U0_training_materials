@@ -80,6 +80,11 @@
         "name": "ADC Theory",
         "path": "/adc",
         "file": "adc_theory.md"
+      },
+      {
+        "name": "ADC Basic Example",
+        "path": "/adc",
+        "file": "adc_handson_basic.md"
       }
     ],
     "menuStructure": [
@@ -125,8 +130,8 @@
         },
         {
           "type": "File",
-          "name": "2. Create Project",
-          "file": "project.md"
+          "name": "1. ADC Basic Example",
+          "file": "adc_handson_basic.md"
         },
         {
           "type": "File",
