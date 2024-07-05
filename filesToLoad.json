@@ -89,7 +89,7 @@
       {
         "name": "ADC with DMA Example",
         "path": "/adc",
-        "file": "acd_handson_dma_circular.md"
+        "file": "adc_handson_dma_circular.md"
       }
     ],
     "menuStructure": [
@@ -141,7 +141,7 @@
         {
           "type": "File",
           "name": "2. ADC with DMA Example",
-          "file": "acd_handson_dma_circular.md"
+          "file": "adc_handson_dma_circular.md"
         }
       ]
     },
