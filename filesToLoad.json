@@ -120,7 +120,7 @@
       "children": [
         {
           "type": "File",
-          "name": "1. Introduction",
+          "name": "Theory",
           "file": "adc_theory.md"
         },
         {
