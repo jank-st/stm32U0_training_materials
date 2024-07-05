@@ -11,9 +11,12 @@ In Configuration
 
 4. Generate code
 
+
 # CubeIDE Application Code
 
+
 ## Measure ADC value
+
 1. Add variable for ADC data in *USER CODE PV* section. We will read the value from ADC and stock it in this variable.
 
 ```c
