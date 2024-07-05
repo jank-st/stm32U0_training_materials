@@ -64,15 +64,16 @@ It is possible to perform faster conversion by reducing the ADC resolution.
 
 # ADC (regular) conversion modes
 
-In this part we will focus on two options: 
+In this part, we will focus on two options:
+
 - CONT mode (continuous)
 - DISCEN mode (discontinuous)
 
 ## Single conversion
 
-Setup: 
+Setup:
 - CONT = 0
-- DISC = 0
+- DISCEN = 0
 
 Only one conversion is performed then ADC is stopped.
 
@@ -80,20 +81,20 @@ Only one conversion is performed then ADC is stopped.
 
 ## Single continuous conversion
 
-Setup: 
+Setup:
 - CONT = 1
-- DISC = 0
+- DISCEN = 0
 
-the same channel is continuously samples, ADC newer stops.
+The same channel is continuously samples, ADC newer stops.
 
 
 ![continuous conversion](./img/continuous_conversion.svg)
 
 ## Discontinuous Conversion Mode
 
-Setup: 
+Setup:
 - CONT = 0
-- DISC = 1
+- DISCEN = 1
 
 A mode when scan stop after set number of conversion in sequence and wait for new start/trigger.
 
