@@ -71,7 +71,6 @@ In this part we will focus on two options:
 ## Single conversion
 
 Setup:
-
 - CONT = 0
 - DISC = 0
 
