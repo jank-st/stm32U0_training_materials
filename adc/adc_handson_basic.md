@@ -10,41 +10,10 @@ In Configuration
 ![alt text](./img/cubemx1.png)
 
 4. Generate code
-5. 
-### **Internal inputs**
 
-The ADC input is connected to internal peripheries of STM32U0.
-Typically some internal referential voltages can be read or temperature sensor.
-
-![internal input](./img/internal_input.svg)
-
-# ADC resolution
-
-The ADC can be set to different resolution.
-
-## ADC1
-
-Resolution up to 12bit.
-It is possible to perform faster conversion by reducing the ADC resolution.
-
-| Resolution | Conversion periods (ADC Clock cycles) |
-|------------|--------------------|
-| 12 bit     | 12.5 ADC CLK       |
-| 10 bit     | 10.5 ADC CLK       |
-| 8 bit      | 18.5 ADC CLK       |
-| 6 bit      | 6.5 ADC CLK        |
-
-
-# ADC (regular) conversion modes
-
-In this part we will focus on two options:
-
-- CONT mode (continuous)
-- DISCEN mode (discontinuous)
-
-## Single conversion
 
 # CubeIDE Application Code
+
 
 ## Measure ADC value
 
