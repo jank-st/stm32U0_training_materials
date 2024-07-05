@@ -71,6 +71,7 @@ In this part we will focus on two options:
 ## Single conversion
 
 Setup:
+
 - CONT = 0
 - DISC = 0
 
@@ -81,6 +82,7 @@ Only one conversion is performed then ADC is stopped.
 ## Single continuous conversion
 
 Setup:
+
 - CONT = 1
 - DISC = 0
 
@@ -92,6 +94,7 @@ the same channel is continuously samples, ADC newer stops.
 ## Discontinuous Conversion Mode
 
 Setup:
+
 - CONT = 0
 - DISC = 1
 
