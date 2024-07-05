@@ -1,3 +1,7 @@
+----!
+Presentation
+----!
+
 # CubeMX Configuration
 
 1. Select ADC1
@@ -11,9 +15,7 @@ In Configuration
 
 4. Generate code
 
-
 # CubeIDE Application Code
-
 
 ## Measure ADC value
 
@@ -37,7 +39,6 @@ Write the following code in the *USER CODE WHILE* section:
 3. Compile and debug the code
 4. Add value to `Live variables`
 5. Try to head the device
-
 
 ## Convert ADC data to real temperature
 
