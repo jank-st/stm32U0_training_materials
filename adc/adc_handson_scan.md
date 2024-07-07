@@ -8,7 +8,7 @@ We will create a sequence to convert three channels:
 ![alt text](./img/2.svg)
 ![alt text](./img/3.svg)
 
-We will ad a new channel to our regular sequence.
+We will add a new channel to our regular sequence.
 
 #  CubeMX
 
