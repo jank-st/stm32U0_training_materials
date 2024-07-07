@@ -87,7 +87,12 @@
         "file": "adc_handson_basic.md"
       },
       {
-        "name": "ADC with DMA Example",
+        "name": "ADC Scan Example",
+        "path": "/adc",
+        "file": "adc_handson_scan.md"
+      },
+      {
+        "name": "ADC DMA Example",
         "path": "/adc",
         "file": "adc_handson_dma_circular.md"
       }
@@ -140,7 +145,12 @@
         },
         {
           "type": "File",
-          "name": "2. ADC with DMA Example",
+          "name": "2. ADC Scan Example",
+          "file": "adc_handson_scan.md"
+        },
+        {
+          "type": "File",
+          "name": "3. ADC with DMA Example",
           "file": "adc_handson_dma_circular.md"
         }
       ]
