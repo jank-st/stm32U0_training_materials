@@ -15,9 +15,7 @@ In Configuration
 
 4. Generate code
 
-# CubeIDE Application Code
-
-## Measure ADC value
+# CubeIDE - Measure ADC value
 
 1. Add variable for ADC data in *USER CODE PV* section. We will read the value from ADC and stock it in this variable.
 
@@ -40,7 +38,7 @@ Write the following code in the *USER CODE WHILE* section:
 4. Add value to `Live variables`
 5. Try to head the device
 
-## Convert ADC data to real temperature
+# CubeIDE - Convert ADC data to real temperature
 
 1. Add temperature variable to *USER CODE PV* section:
 
