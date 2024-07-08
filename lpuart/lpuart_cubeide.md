@@ -21,6 +21,11 @@ Change LSEState in `SystemClock_Config()` function in **main.c** file:
 # Initialization
 
 ## Variables
+Copy paste following snippet in `USER CODE BEGIN EFP` section in **main.h** file:
+
+```c
+extern uint8_t bufferRX[8];
+```
 
 Copy paste following snippet in `USER CODE BEGIN PV` section in **main.c** file:
 
@@ -105,4 +110,74 @@ Copy paste following snippet in `while(1) loop` section in **main.c** file:
 	  }
 ```
 
+## RX in FIFO mode
+
+Enable interrupt for RXFIFO threshold.
+
+Copy paste following snippet in `USER CODE BEGIN 2` section in **main.c** file:
+
+```c
+/* Enable IT for RXFIFO reaches Threshold = 8 bytes in our case*/
+__HAL_UART_ENABLE_IT(&hlpuart1, UART_IT_RXFT);
+```
+<p> </p>
+
+Delete or comment `HAL_UART_IRQHandler(&hlpuart1)` function in ISR `USART3_LPUART1_IRQHandler(void)` section in **stm32u0xx_it.c** file:
+
+<p> </p>
+
+Copy paste following snippet in `/* USER CODE BEGIN USART3_LPUART1_IRQn 1 */` section in **stm32u0xx_it.c** file:
+
+```c
+	uint32_t i = 0;
+	if(__HAL_UART_GET_FLAG(&hlpuart1, UART_FLAG_RXFT))
+	{
+		__HAL_UART_CLEAR_FLAG(&hlpuart1, UART_FLAG_RXFT);
+
+		while(__HAL_UART_GET_FLAG(&hlpuart1, UART_FLAG_RXFNE))
+		{
+			bufferRX[i] = LPUART1->RDR;
+			i++;
+		}
+	}
+```
+
 # LPUART acitivity in Low Layer library
+## RX in FIFO mode
+
+Copy & paste LL drivers in project folder  **stm32u0xx_ll_lpuart.c** and **stm32u0xx_ll_lpuart.h**
+
+Copy paste following snippet in `USER CODE BEGIN Includes` section in **main.h** file:
+
+```c
+#include "stm32u0xx_ll_lpuart.h"
+```
+<br />
+
+Enable interrupt for RXFIFO threshold.
+
+Copy paste following snippet in `USER CODE BEGIN 2` section in **main.c** file:
+
+```c
+/* Enable IT for RXFIFO reaches Threshold = 8 bytes in our case*/
+LL_LPUART_EnableIT_RXFT(LPUART1);
+```
+<p> </p>
+
+Delete or comment `HAL_UART_IRQHandler(&hlpuart1)` function in ISR `USART3_LPUART1_IRQHandler(void)` section in **stm32u0xx_it.c** file:
+
+<p> </p>
+
+Copy paste following snippet in `/* USER CODE BEGIN USART3_LPUART1_IRQn 1 */` section in **stm32u0xx_it.c** file:
+
+```c
+uint32_t i = 0;
+	if(LL_LPUART_IsActiveFlag_RXFT(LPUART1))
+	{
+		while(LL_LPUART_IsActiveFlag_RXNE_RXFNE(LPUART1))
+		{
+			bufferRX[i] = LL_LPUART_ReceiveData8(LPUART1);
+			i++;
+		}
+	}
+```
