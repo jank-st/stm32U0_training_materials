@@ -95,6 +95,21 @@
         "name": "ADC DMA Example",
         "path": "/adc",
         "file": "adc_handson_dma_circular.md"
+      },
+      {
+        "name": "Introduction",
+        "path": "/shutdown",
+        "file": "SD_intro.md"
+      },
+      {
+        "name": "CubeMX",
+        "path": "/shutdown",
+        "file": "SD_cubemx.md"
+      },
+      {
+        "name": "CubeIDE",
+        "path": "/shutdown",
+        "file": "SD_cubeide.md"
       }
     ],
     "menuStructure": [
@@ -219,22 +234,17 @@
         {
           "type": "File",
           "name": "1. Introduction",
-          "file": "intro.md"
+          "file": "SD_intro.md"
         },
         {
           "type": "File",
-          "name": "2. Create Project",
-          "file": "project.md"
+          "name": "2. CubeMX",
+          "file": "SD_cubemx.md"
         },
         {
           "type": "File",
-          "name": "3. CubeMX",
-          "file": "cubemx.md"
-        },
-        {
-          "type": "File",
-          "name": "5. CubeIDE",
-          "file": "cubeide.md"
+          "name": "3. CubeIDE",
+          "file": "SD_cubeide.md"
         }
       ]
     }
