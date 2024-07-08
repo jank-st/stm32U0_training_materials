@@ -25,13 +25,17 @@ Note that **LSESYSEN bit in BDCR** must be enabled as well (missing in RM descri
 # Liquid crystal display controller
 Few parameters must be configured
 
+- Select `1/4 Duty Cycle` Mode
+
 - To get Frame rate ~30 Hz for LCD designed 1/4 duty (4 COMs)
-  - f_frame = f_lcdclk / (2^PS * (16+DIV)) * duty
+  - f_frame = f_lcdclk / (2^PS x (16+DIV)) * duty
   - PS = 4 and DIV = 1
-  - f_frame = 32768 / (16 * 17) * 1/4 = 30.12 Hzs
+  - f_frame = 32768 / (16 x 17) x 1/4 = 30.12 Hz
   - `Clock Prescaler = 16` and `Clock Divider = 17`
   
 - Increase `Contrast control = 2.98V`
+
+- Select following segments SEG**x**: `6, 11, 14, 15, 22, 23, 24, 26, 27, 28, 29, 32, 33, 34, 35, 36, 37, 38, 45, 46, 47, 48, 49`
 
 ![image](./img/LCD.png)
 
@@ -51,6 +55,8 @@ PC3 is not configured as VLCD pin for VLCD generation! Bug found as cannot be co
 
 # Advanced Settings
 - Do not generate Function Call for **ADC1, I2C1, TSC, USART2, USB** as it's not needed for LCD hands on.
+
+![image](./img/advanced_settings.png)
 
 # Project Manager
 Project is now ready for generation!
