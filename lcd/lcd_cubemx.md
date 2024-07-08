@@ -27,13 +27,15 @@ Few parameters must be configured
 
 - Select `1/4 Duty Cycle` Mode
 
+- Select `1/4 Bias Selector`
+
 - To get Frame rate ~30 Hz for LCD designed 1/4 duty (4 COMs)
   - f_frame = f_lcdclk / (2^PS x (16+DIV)) * duty
   - PS = 4 and DIV = 1
   - f_frame = 32768 / (16 x 17) x 1/4 = 30.12 Hz
   - `Clock Prescaler = 16` and `Clock Divider = 17`
   
-- Increase `Contrast control = 2.98V`
+- Increase `Contrast control = 2.99V`
 
 - Select following segments SEG**x**: `6, 11, 14, 15, 22, 23, 24, 26, 27, 28, 29, 32, 33, 34, 35, 36, 37, 38, 45, 46, 47, 48, 49`
 
