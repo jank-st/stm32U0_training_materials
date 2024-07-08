@@ -13,9 +13,9 @@ Here are the different steps of the application:
 
 LED4 is used to monitor the system state as follows:
 
- - LED4 toggling: system is restarting and *out-of-shutdown* has been detected
- - LED4 is ON: system in RUN mode
- - LED4 OFF: system in SHUTDOWN mode
+ - **LED4 toggling**: system is restarting and *out-of-shutdown* has been detected
+ - **LED4 is ON**: system in RUN mode
+ - **LED4 OFF**: system in SHUTDOWN mode
 
 # Application code - *Initialization variable*
 
