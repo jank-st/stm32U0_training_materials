@@ -10,6 +10,7 @@ Here are the different steps of the application:
 - The system will resume after 2 seconds.
 - After wake-up from SHUTDOWN mode, program execution restarts from the beginning.
 
+
 LED4 is used to monitor the system state as follows:
 
  - LED4 toggling: system is restarting and *out-of-shutdown* has been detected
