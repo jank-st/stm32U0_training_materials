@@ -144,17 +144,6 @@ New data are preserved.
 
 ![discontinuous overwrite](./img/overrun_overwrite.svg)
 
-# Analog watchdog
-
-Analog watchdog is used to monitor that either one selected channel or all enabled channels remain within a configured voltage range.
-
-![alt text](./img/analog_watchdog.svg)
-
-## Thresholds
-
-Define a `High` and `Low` threshold where the values will be checked.
-If value is under low threshold or above high threshold a interrupt can be triggered.
-
 
 # ADC conversion management data mode
 
