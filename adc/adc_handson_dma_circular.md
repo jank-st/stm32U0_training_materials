@@ -58,5 +58,5 @@ uint16_t adc_buffer[3];
 ```c
     temperature =__HAL_ADC_CALC_TEMPERATURE(3300, adc_buffer[0], ADC_RESOLUTION_12B);
 	  vrefint = adc_buffer[1];
-	  vbat = adc_buffer[1];
+	  vbat = adc_buffer[2];
 ```
