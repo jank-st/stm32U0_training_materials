@@ -23,6 +23,12 @@ Here are the different steps of the application:
 - Enable WakeUp Pin PWR_WAKEUP_PIN2 connected to PC.13
 - Enter in Standby mode
 
+LED4 is used to monitor the system state as follows:
+
+- **LED4 is ON for 1 sec**: system is restarting
+- **LED4 toggling**: system was wake up by WKUP_PIN2
+- **LED4 OFF**: system in STANDBY mode without LED retention
+
 Add the following code in the `USER CODE 2` section:
 
 >/* USER CODE BEGIN 2 */
