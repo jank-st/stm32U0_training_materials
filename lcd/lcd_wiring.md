@@ -6,7 +6,7 @@ Presentation
 
 To activate one segment "BAR0" following SRAM registers must be targeted.
 
-- upper Register COM3 = `LCD_RAM_REGISTER5`
+- upper Register COM3 = `LCD_RAM_REGISTER7`
 - LCD_SEG_32 = `bit 0`
   
 ## LCD wiring
