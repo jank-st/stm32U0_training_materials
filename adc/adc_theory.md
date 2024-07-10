@@ -148,7 +148,7 @@ New data are preserved.
 # ADC conversion management data mode
 
 This option will set how the ADC results will be handled.
-there are four options:
+there are three options:
 
 - Regular Conversion data stored in DR register only
 - DMA one shot mode
