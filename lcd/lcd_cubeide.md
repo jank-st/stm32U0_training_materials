@@ -42,7 +42,7 @@ Defines which are mapping one specific LCD segment.
 Copy paste following snippet in `USER CODE BEGIN PD` section in **main.c** file:
 
 ```c
-#define LCD_RAM 		LCD_RAM_REGISTER5
+#define LCD_RAM 		LCD_RAM_REGISTER7
 #define LCD_SEG_SHIFT 	0
 #define LCD_SEG_MSK 	(0x1 << LCD_SEG_SHIFT)
 ```
