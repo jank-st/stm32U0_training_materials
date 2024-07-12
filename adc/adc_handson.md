@@ -115,7 +115,7 @@ volatile uint16_t vrefint;
 
 Now we will use DMA to read data from ADC. So the core will not need to handle it.
 
-1. In ADC1 config, set `continuous conversion mode` to **ENABLE**
+1. In ADC1 config, set `continuous conversion mode` to **ENABLE**.
 
 ![alt text](./img/cubemx2.png)
 
@@ -138,11 +138,11 @@ Configure the DMA as shown just bellow:
 
 ![alt text](./img/cubemx4.png)
 
-3. Go back in *Parameter Settings* and set `DMA Continuous Requests` to **ENABLE**
+3. Go back in *Parameter Settings* and set `DMA Continuous Requests` to **ENABLE**.
 
 ![alt text](./img/cubemx5.png)
 
-4. Generate code
+4. Generate code.
 
 # CubeIDE
 
